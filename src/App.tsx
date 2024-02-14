@@ -25,7 +25,7 @@ export default function Page() {
       "T_T",
     ];
 
-    return phrases[Math.min(noCount, phrases.length - 1)];
+    return phrases[Math.min(noCount%(phrases.length - 1), phrases.length - 1)];
   };
 
   return (
